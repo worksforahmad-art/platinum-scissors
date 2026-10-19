@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platinum Scissors — Premium Scissors Collection</title>
+  <meta name="description" content="Platinum Scissors brings together scissors for everyday use, tailoring, crafts, and hairdressing. Browse the collection and find the right cut." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts – DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================
+       HEADER
+       ======================================================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Logo -->
+      <a href="#home" class="logo" aria-label="Platinum Scissors – Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+          <line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/>
+          <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+        </svg>
+        Platinum Scissors
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link" data-nav>Home</a></li>
+          <li><a href="#shop" class="nav__link" data-nav>Shop</a></li>
+          <li><a href="#categories" class="nav__link" data-nav>Categories</a></li>
+          <li><a href="#about" class="nav__link" data-nav>About</a></li>
+          <li><a href="#contact" class="nav__link" data-nav>Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header__actions">
+        <!-- Cart -->
+        <button class="header-cart-btn" id="cartToggle" aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-badge" id="cartBadge" data-count="0" aria-live="polite" aria-label="Cart items">0</span>
+        </button>
+
+        <!-- Mobile menu toggle -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" id="menuIcon">
+            <line x1="4" y1="6" x2="20" y2="6"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="18" x2="20" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================================================
+         HERO
+         ====================================================== -->
+    <section class="hero section" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge">Premium Scissors Collection</span>
+          <h1 class="hero__title">The Right Cut Starts Here.</h1>
+          <p class="hero__text">
+            Discover a curated selection of scissors for every purpose — from everyday tasks to specialised tailoring, crafting, and hairdressing.
+          </p>
+          <div class="hero__actions">
+            <a href="#shop" class="btn btn--primary">Shop Scissors</a>
+            <a href="#categories" class="btn btn--ghost">Explore Categories →</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="assets/images/hero-scissors.svg" alt="Elegant illustration of premium scissors" width="560" height="373" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CATEGORIES
+         ====================================================== -->
+    <section class="section" id="categories">
+      <div class="container">
+        <h2 class="section-title">Categories</h2>
+        <p class="section-subtitle">Find the right scissors for your needs.</p>
+
+        <div class="categories-grid">
+
+          <!-- Everyday -->
+          <button class="category-card" data-category="Everyday" aria-label="Browse Everyday scissors">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+                <line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/>
+                <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="category-card__name">Everyday</h3>
+            <p class="category-card__count">General-purpose scissors</p>
+          </button>
+
+          <!-- Tailoring -->
+          <button class="category-card" data-category="Tailoring" aria-label="Browse Tailoring scissors">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14.5 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V7.5L14.5 2z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+            <h3 class="category-card__name">Tailoring</h3>
+            <p class="category-card__count">Fabric &amp; sewing scissors</p>
+          </button>
+
+          <!-- Craft -->
+          <button class="category-card" data-category="Craft" aria-label="Browse Craft scissors">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 class="category-card__name">Craft</h3>
+            <p class="category-card__count">Precision crafting scissors</p>
+          </button>
+
+          <!-- Hairdressing -->
+          <button class="category-card" data-category="Hairdressing" aria-label="Browse Hairdressing scissors">
+            <div class="category-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 7h-4a2 2 0 01-2-2V3"/>
+                <path d="M4 17h4a2 2 0 012 2v2"/>
+                <line x1="3" y1="3" x2="21" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="category-card__name">Hairdressing</h3>
+            <p class="category-card__count">Professional styling scissors</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         SHOP
+         ====================================================== -->
+    <section class="section section--grey" id="shop">
+      <div class="container">
+        <h2 class="section-title">Shop Scissors</h2>
+        <p class="section-subtitle">Browse our collection of quality scissors.</p>
+
+        <!-- Toolbar -->
+        <div class="shop-toolbar">
+          <!-- Search -->
+          <div class="shop-search">
+            <svg class="shop-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="search" class="shop-search__input" id="shopSearch" placeholder="Search scissors…" aria-label="Search products" />
+          </div>
+
+          <!-- Filters -->
+          <div class="shop-filters" id="shopFilters" role="group" aria-label="Filter by category">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <!-- Remaining filter buttons injected by JS from CATEGORIES -->
+          </div>
+
+          <!-- Sort -->
+          <div class="shop-sort">
+            <label for="shopSort" class="sr-only">Sort products</label>
+            <select id="shopSort">
+              <option value="default">Sort by</option>
+              <option value="low">Price: Low to High</option>
+              <option value="high">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Product grid (rendered by JS) -->
+        <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         ABOUT
+         ====================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Platinum Scissors</h2>
+        <p class="section-subtitle">Quality scissors for every purpose.</p>
+
+        <div class="about__content">
+          <p>
+            Platinum Scissors brings together a curated selection of scissors designed for everyday use, tailoring, crafts, and hairdressing. Whether you are cutting paper at home, working with fabric, creating detailed craft projects, or styling hair, our collection offers options suited to each task.
+          </p>
+          <p>
+            We believe in keeping things simple: the right tool for the right job. Browse the collection, explore each category, and find the scissors that fit your needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         FAQ
+         ====================================================== -->
+    <section class="section section--grey" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Common questions about the collection and this website.</p>
+
+        <div class="faq-list" role="list">
+
+          <!-- Q1 -->
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I choose a suitable scissors category?</span>
+              <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer__inner">
+                Start by thinking about your primary task. <strong>Everyday</strong> scissors suit general paper-cutting and household use. <strong>Tailoring</strong> scissors are designed for fabric and sewing. <strong>Craft</strong> scissors offer precision for detailed projects. <strong>Hairdressing</strong> scissors are shaped for haircutting and styling. Use the category filter in the shop to narrow your options.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where can I view product details?</span>
+              <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer__inner">
+                Click the "View Details" button on any product card in the shop. This opens a panel showing a larger image, the full description, price, and a quantity selector so you can add the product directly to your cart.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I change quantities in the cart?</span>
+              <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer__inner">
+                Open the cart by clicking the bag icon in the header. Each item shows plus and minus buttons to adjust the quantity (from 1 to 99). You can also remove an item entirely using the "Remove" link. Totals update immediately after any change.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              <span>Does this website take payments?</span>
+              <svg class="faq-question__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer__inner">
+                No. This is a demonstration storefront. No real orders are placed and no payments are processed. The products, prices, and cart functionality are provided for demonstration purposes only.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CONTACT
+         ====================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-subtitle">Have a question? Send us a message.</p>
+
+        <div class="contact-wrapper">
+          <p class="contact-demo-note" aria-live="polite">Demo form — messages are not sent.</p>
+
+          <!-- Contact form -->
+          <form id="contactForm" novalidate>
+            <div class="form-group" id="nameGroup">
+              <label for="contactName" class="form-label">Name</label>
+              <input type="text" class="form-input" id="contactName" placeholder="Your name" autocomplete="name" required />
+              <p class="form-error" id="nameError">Please enter your name.</p>
+            </div>
+
+            <div class="form-group" id="emailGroup">
+              <label for="contactEmail" class="form-label">Email</label>
+              <input type="email" class="form-input" id="contactEmail" placeholder="you@example.com" autocomplete="email" required />
+              <p class="form-error" id="emailError">Please enter a valid email address.</p>
+            </div>
+
+            <div class="form-group" id="messageGroup">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea class="form-textarea" id="contactMessage" placeholder="How can we help?" rows="5" required></textarea>
+              <p class="form-error" id="messageError">Please enter a message.</p>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block">Send Message (Demo)</button>
+          </form>
+
+          <!-- Success state -->
+          <div class="form-success" id="formSuccess">
+            <svg class="form-success__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            <p class="form-success__title">Demo complete.</p>
+            <p class="form-success__text">Your message has not been sent. This is a demonstration form only.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+              <line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/>
+              <line x1="8.12" y1="8.12" x2="12" y2="12"/>
+            </svg>
+            Platinum Scissors
+          </div>
+          <p class="footer__desc">A curated selection of scissors for everyday use, tailoring, crafts, and hairdressing.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">Navigation</h3>
+          <div class="footer__links">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Help</h3>
+          <div class="footer__links">
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Platinum Scissors. All rights reserved.</p>
+        <p class="footer__demo-note">Demo storefront — sample products and prices. No orders or payments are processed.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       PRODUCT DETAIL MODAL
+       ======================================================== -->
+  <div class="modal-overlay" id="productModal" role="dialog" aria-modal="true" aria-label="Product details">
+    <div class="modal">
+      <div class="modal__header">
+        <h3 class="modal__title">Product Details</h3>
+        <button class="modal__close" id="modalClose" aria-label="Close product details">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__body" id="modalBody">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       PRODUCT IMAGE ZOOM VIEWER MODAL
+       ======================================================== -->
+  <div class="zoom-overlay" id="zoomModal" role="dialog" aria-modal="true" aria-label="Product image zoom viewer">
+    <div class="zoom-dialog">
+      <div class="zoom-header">
+        <div class="zoom-title-wrap">
+          <span class="zoom-badge">High Resolution</span>
+          <h3 class="zoom-title" id="zoomTitle">Product Image</h3>
+        </div>
+        <div class="zoom-controls">
+          <button class="zoom-btn" id="zoomOutBtn" aria-label="Zoom out" title="Zoom out (-)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </button>
+          <span class="zoom-level-badge" id="zoomLevel" aria-live="polite">100%</span>
+          <button class="zoom-btn" id="zoomInBtn" aria-label="Zoom in" title="Zoom in (+)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="12" y1="5" x2="12" y2="19"/>
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+          </button>
+          <button class="zoom-btn zoom-btn--text" id="zoomResetBtn" aria-label="Reset zoom" title="Reset zoom (0 / R)">
+            Reset
+          </button>
+          <button class="zoom-btn zoom-btn--close" id="zoomCloseBtn" aria-label="Close image zoom" title="Close (Esc)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="zoom-viewport" id="zoomViewport" tabindex="0" role="region" aria-label="Interactive zoomable image. Drag to pan, scroll or use buttons to zoom.">
+        <div class="zoom-stage" id="zoomStage">
+          <img src="" alt="" id="zoomImage" draggable="false" />
+        </div>
+      </div>
+
+      <div class="zoom-footer">
+        <p class="zoom-hint">
+          <span class="desktop-hint">Drag to pan &bull; Scroll or use &plus; / &minus; to zoom up to 3&times; &bull; Double-click to toggle zoom &bull; Esc to close</span>
+          <span class="mobile-hint">Drag to pan &bull; Pinch or use &plus; / &minus; to zoom up to 3&times; &bull; Double-tap to toggle zoom</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       ORDER SUMMARY MODAL
+       ======================================================== -->
+  <div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-label="Order summary">
+    <div class="modal" style="max-width: 640px;">
+      <div class="modal__header">
+        <h3 class="modal__title">Order Summary</h3>
+        <button class="modal__close" id="orderModalClose" aria-label="Close order summary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__body" id="orderModalBody">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       CART DRAWER
+       ======================================================== -->
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+    <div class="cart-drawer__header">
+      <h3 class="cart-drawer__title">Your Cart</h3>
+      <button class="modal__close" id="cartClose" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Cart body – populated by JS -->
+    <div class="cart-drawer__body" id="cartBody"></div>
+    <!-- Cart footer – populated by JS -->
+    <div class="cart-drawer__footer" id="cartFooter"></div>
+  </aside>
+
+  <!-- ========================================================
+       TOAST CONTAINER
+       ======================================================== -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ========================================================
+       SCRIPTS
+       ======================================================== -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
